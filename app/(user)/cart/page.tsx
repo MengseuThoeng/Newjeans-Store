@@ -12,6 +12,7 @@ import {
   setProductsItem,
 } from "@/redux/features/cart/cartSlice";
 import { ProductType } from "@/lib/definitions";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Policy",

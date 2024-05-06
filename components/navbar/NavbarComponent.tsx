@@ -117,9 +117,7 @@ export default function NavbarComponent() {
             ))}
           </ul>
         </p>
-        <label htmlFor="" className="sms:hidden">
-          <input type="search" placeholder="Search..." className="rounded-lg" />
-        </label>
+        
         <div className="flex place-items-center gap-7">
           <div className="relative text-xl">
             <div>

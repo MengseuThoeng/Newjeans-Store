@@ -10,8 +10,6 @@ import { useRouter } from "next/navigation";
 import { FaYoutube } from "react-icons/fa6";
 import { Metadata } from "next";
 
-
-
 type ValueTypes = {
   email: string;
   password: string;
