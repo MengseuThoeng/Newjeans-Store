@@ -67,12 +67,14 @@ export default function NavbarComponent() {
   }, []);
 
   const getMenuStyle = () => {
-    if (document.documentElement.clientWidth <= 2600) {
+    if (typeof window !== 'undefined' && document.documentElement.clientWidth <= 2600) {
       return { left: menuOpen ? "0" : "-200%" };
     } else {
       setMenuOpen(false);
+      return {};
     }
   };
+  
 
   const handleSignOut = () => {
     signOut();
