@@ -28,16 +28,17 @@ const columns: GridColDef[] = [
 ];
 
 const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
-  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-  { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 }
+  { id: 1, lastName: "កូន", firstName: "កែវ", age: 35 },
+  { id: 2, lastName: "ឡានីស្តេរ", firstName: "សេរី", age: 42 },
+  { id: 3, lastName: "ឡានីស្តេរ", firstName: "ហ៊ាហ្សាេអ៊ី", age: 45 },
+  { id: 4, lastName: "ស្តាក", firstName: "អារី", age: 16 },
+  { id: 5, lastName: "តាំការៀន", firstName: "ដានាអាតេនី", age: null },
+  { id: 6, lastName: "មេលីសានឌ្រ", firstName: null, age: 150 },
+  { id: 7, lastName: "ក្លិចហ៊ុលហ្រោស", firstName: "ហ៊ារ៉ាវ", age: 44 },
+  { id: 8, lastName: "ហ្រីន្រា", firstName: "រស្សីនី", age: 36 },
+  { id: 9, lastName: "រូហ្វី", firstName: "ហារ៉វ៉ាេយ", age: 65 }
 ];
+
 
 const Shop = () => {
   const { data: session, status } = useSession();
@@ -52,11 +53,7 @@ const Shop = () => {
 
   return (
     <div className="container mx-auto grid gap-3">
-      <div>
-        <Link href="/createProduct" className="bg-black text-white py-3 px-2">
-          Create Product
-        </Link>
-      </div>
+      
       <div className="w-full">
         <DataGrid
           rows={rows}
@@ -70,7 +67,11 @@ const Shop = () => {
           checkboxSelection
         />
       </div>
-      <Footer />
+      <div>
+        <Link href="/createProduct" className="bg-black text-white py-3 px-2">
+          Create Product
+        </Link>
+      </div>
     </div>
   );
 };
