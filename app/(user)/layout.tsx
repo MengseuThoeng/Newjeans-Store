@@ -12,13 +12,13 @@ import SessionWrapper from "../SessionProvider";
 import FooterComponent from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
-  title: "ISTAD Ecommerce Web",
-  description: "ISTAD Ecommerce Web is a web application for selling products.",
+  title: "Newjeans Store",
+  description: "Newjeans Store is a web for selling jeans.",
+  icons:"https://img1.picmix.com/output/stamp/normal/3/1/2/5/2525213_cf584.png",
   openGraph: {
-    title: "ISTAD Ecommerce Web",
-    description:
-      "ISTAD Ecommerce Web is a web application for selling products.",
-    images: "https://store.istad.co/media/brand_images/sokea_AF6QosU.jpg",
+    title: "Newjeans Store",
+    description: "Newjeans Store is a web for selling jeans.",
+    images: "https://i8.amplience.net/i/naras/NewJeans_ADOR",
   },
 };
 

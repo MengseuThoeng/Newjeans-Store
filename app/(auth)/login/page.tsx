@@ -1,13 +1,14 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from "react";
 import style from "./style.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
 import { IoEyeOffSharp, IoEyeSharp } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 import { FaYoutube } from "react-icons/fa6";
+import { Metadata } from "next";
 
 
 
@@ -38,7 +39,7 @@ export default function Login() {
     if (status === "authenticated") {
       router.push("/");
     }
-  }, [status]);
+  }, [status,router]);
   const handleSubmit = (values: ValueTypes) => {
     setLoading(true);
     fetch(`http://localhost:3000/api/login`, {
@@ -62,6 +63,7 @@ export default function Login() {
 
   return (
     <main>
+      <Link className="text-sm font-bold text-center" href={"/"}>After Login back to home</Link>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}

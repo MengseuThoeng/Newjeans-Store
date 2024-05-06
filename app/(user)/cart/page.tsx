@@ -13,6 +13,11 @@ import {
 } from "@/redux/features/cart/cartSlice";
 import { ProductType } from "@/lib/definitions";
 
+export const metadata: Metadata = {
+  title: "Policy",
+  description: "Newjeans Store is a web for selling jeans.",
+};
+
 export default function Shop() {
   const [cartItemsFromStore, setCartItemsFromStore] = useState<ProductType[]>(
     []
